@@ -1,0 +1,25 @@
+
+spring:
+  datasource:
+    master:
+      username: shadow
+      password: xbDqmBFRtKrz1@
+      url: jdbc:mysql://rm-8vb1a77wawpb9969kno.mysql.zhangbei.rds.aliyuncs.com:3306/shadow
+#      url: jdbc:mysql://rm-8vb1a77wawpb9969kno.mysql.zhangbei.rds.aliyuncs.com:3306/shadow?useSSL=false&characterEncoding=UTF-8
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      type: com.alibaba.druid.pool.DruidDataSource
+
+    slave:
+      username: pfecm_dev
+      password: pfecm_dev0508
+      url: jdbc:mysql://rm-8vb1a77wawpb9969kno.mysql.zhangbei.rds.aliyuncs.com:3306/pfecm_dev
+#      url: jdbc:mysql://rm-8vb1a77wawpb9969kno.mysql.zhangbei.rds.aliyuncs.com:3306/shadow?useSSL=false&characterEncoding=UTF-8
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      type: com.alibaba.druid.pool.DruidDataSource
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    #database-platform: mysql
+    database: mysql
+    show-sql: true
